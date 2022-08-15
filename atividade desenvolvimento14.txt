@@ -1,0 +1,17 @@
+atividade desenvolvimento 8 - CategoriaHabilitacao
+
+quant_rodas = int(input('Digite a quantidade de rodas: '))
+quant_passageiros = float(input('Digite a quantidade de passageiros: '))
+peso = int(input('Digite o peso em KG do veiculo: '))
+
+if quant_rodas >= 2 and quant_rodas <= 3:
+    print('Categoria A - veiculos com 2 ou 3 rodas')
+elif quant_rodas >= 4 and quant_passageiros <= 8 and peso <= 3500:
+    print('Categoria B - veiculos com 4 rodas, que acomodam até 8 pessoas e peso até 3500kg')
+elif quant_rodas >= 4 and peso >= 3500 and peso <= 6000:
+    print('Categoria C - veiculos com 4 rodas ou mais e com peso entre 3500 e 6000kg')
+elif quant_rodas >= 4 and quant_passageiros >= 8:
+    print('Categoria D - veiculos com 4 rodas ou mais e que acomodam mais de 8 pessoas')
+elif quant_rodas >= 4 and peso >= 6000:
+    print('Categoria E - veiculos com 4 rodas ou mais e com mais de 6000kg')
+
